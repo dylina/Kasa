@@ -1,0 +1,25 @@
+@import '../utils/main.scss';
+
+.footer {
+	&-container {
+		height: 200px;
+		margin-top: auto;
+		background-color: $color-black;
+		color: $color-primary;
+		text-align: center;
+		display: flex;
+		align-content: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+	}
+	&-logo {
+		height: 36px;
+		margin-top: 60px;
+	&-credit {
+		margin-top: 40px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+    }
+}

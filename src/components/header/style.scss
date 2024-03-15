@@ -1,0 +1,25 @@
+@import '../utils/main.scss';
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 24px;//desk
+	flex-wrap: nowrap;
+    gap: 57px;
+	&-active {
+		text-decoration: underline;
+		color: $color-black;
+	}
+	&-link {
+		text-decoration: none;
+		color: $color-black;
+	}
+    &-header {
+		position: relative;
+		padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+	
+}

@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom';
 
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import Error404 from '../error404';
 
 export default function Flat(){
 
@@ -42,12 +43,18 @@ export default function Flat(){
     }
 
     if(isError404) {
-        return (<>Erreur 404</>)
+        return (<>
+        <Header/>
+        <Error404 />
+        <Footer/>
+        </>
+        )
     }
 
     return (<>
         <Header />
         logement : {flat.title}
+        <Footer/>
 
     </>)
 }
